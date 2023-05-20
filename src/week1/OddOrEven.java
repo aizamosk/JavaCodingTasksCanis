@@ -1,6 +1,11 @@
 package week1;
 
 public class OddOrEven {
+
+    public static void main(String[] args) {
+        oddOrEVen(3);
+    }
+
     /*
 
  Numbers-  Odd or even:
@@ -10,5 +15,14 @@ identify(5); ->"Odd"
 identify(6); ->"Even"
 
      */
+
+
+    public static void oddOrEVen (int a){
+        if (a%2==0){
+            System.out.println(a+" -> even");
+        }else {
+            System.out.println(a+" -> odd");
+        }
+    }
 
 }
