@@ -17,8 +17,8 @@ identify(6); ->"Even"
     }
     public  static  void  identifyOddEven( int  n ) {
         if(n%2==0){
-            System.out.println("even");}
+            System.out.println("even");}//shows even
         else{
-            System.out.println("odd");}
+            System.out.println("odd");}//shows odd
     }
 }
