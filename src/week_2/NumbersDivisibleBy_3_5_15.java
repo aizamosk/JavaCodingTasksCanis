@@ -1,16 +1,26 @@
 package week_2;
 
-/**
- *  Numbers -- Divisible by 3, 5, 15
- * Write a program that can print the numbers between 1 ~ 100 that can be divisible by 3, 5, and 15.
- * if the number can be divisible by 3, 5 and 15, then it should only be displayed in DivisibelBy15 section
- * if the number can be divisible by 3 but cannot be divisible by 15, then it should only be displayed in DivisibelBy3 section
- * if the number can be divisible by 5 but cannot be divisible by 15, then it should only be displayed in DivisibelBy5 section
- * ex:
- * OutPut:
- * Divisible By 15 15 30 45 60 75 90
- * Divisible By 5 5 10 20 25 35 40 50 55 65 70 80 85 95 100
- * Divisible By 3 3 6 9 12 18 21 24 27 33 36 39 42 48 51 54 57 63 66 69 72 78 81 84 87 93 96 99
- */
-public class NumbersDivisibleBy_3_5_15 {
+public class Finra {
+    /*
+    FINRA:
+Write a function which prints out the numbers from 1 to 30 but for numbers which are a multiple of 3, print "FIN" instead of the number and for numbers which are a multiple of 5, print "RA" instead of the number. For numbers which are a multiple of both 3 and 5, print "FINRA" instead of the number.
+     */
+    public static void main(String[] args) {
+        FINRA();
+    }
+
+    public static void FINRA() {
+        String result = "";
+        for (int i = 1; i <= 30; i++) { //iterate from 1 to 30
+            if (i % 5 == 0 && i % 3 == 0) //multiple of both 3 and 5, print "FINRA" instead of the number.
+                result += "FINRA ";
+            else if (i % 5 == 0) //multiple of 5, print "RA" instead of the number.
+                result += "RA ";
+            else if (i % 3 == 0)
+                result += "FIN ";  //multiple of 3, print "FIN" instead of the number.
+            else
+                result += i + " ";
+        }
+        System.out.println(result);
+    }
 }
