@@ -1,15 +1,6 @@
-package Aaron;
+package Aaron.week_1;
 
 public class OddOrEven {
-    /*
-
- Numbers-  Odd or even:
-Write  a method which can identify given number is even or odd
-Output ex:
-identify(5); ->"Odd"
-identify(6); ->"Even"
-
-     */
     public static void main(String[] args) {
         //Write  a method which can identifies given number is even or odd
         identifyOddEven(5);
@@ -23,3 +14,12 @@ identify(6); ->"Even"
     }
 
 }
+
+/*
+ Numbers-  Odd or even:
+Write  a method which can identify given number is even or odd
+Output ex:
+identify(5); ->"Odd"
+identify(6); ->"Even"
+
+ */
