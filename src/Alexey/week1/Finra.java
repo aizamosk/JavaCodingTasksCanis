@@ -1,4 +1,4 @@
-package Alexey;
+package Alexey.week1;
 
 public class Finra {
     /*

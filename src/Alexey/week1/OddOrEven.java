@@ -1,4 +1,4 @@
-package Alexey;
+package Alexey.week1;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
