@@ -1,11 +1,11 @@
-package Aaron;
+package yavuz;
 
 public class DivisionWithoutOperator {
     /*
 
- Numbers - Divide without / operator:
+Numbers - Divide without / operator:
 Write a method that can divide two numbers without using division operator
-     */
+  */
     public static void main(String[] args) {
         //Write a method that can divide two numbers without using division operator
         divides(6,3);
