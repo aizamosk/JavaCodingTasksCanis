@@ -1,4 +1,4 @@
-package Leela.week_2;
+package Daniela.week2;
 
 /**
  *  Numbers -- print consecutive numbers
@@ -23,29 +23,30 @@ package Leela.week_2;
  * Codility
  */
 public class NumbersPrintConsecutiveNumbers {
+    public static void main(String[] args) {
 
-    public static void divisibleMethod(int num){
-        for(int i = 0; i <= num; i++){
-            if(i % 2 == 0){
+        printNumbers(17);
+        printNumbers(20);
+    }
+    static   void printNumbers(int n) {
+        for(int i = 1; i <= n; i++) {
+            if(i % 2 == 0 && i % 3 == 0 && i % 5 == 0) {
+                System.out.println("CodilityTestCoders");
+            } else if (i % 2 == 0 && i % 3 == 0) {
+                System.out.println("CodilityTest");
+            } else if (i % 2 == 0 && i % 5 == 0) {
+                System.out.println("CodilityCoders");
+            } else if (i % 3 == 0 && i % 5 == 0) {
+                System.out.println("TestCoders");
+            } else if (i % 2 == 0) {
                 System.out.println("Codility");
-            }
-            else if(i % 3 == 0){
+            } else if (i % 3 == 0) {
                 System.out.println("Test");
             } else if (i % 5 == 0) {
                 System.out.println("Coders");
-            }
-            else if(i % 2 == 0 && i == 3){
-                System.out.println("Codility Test");
-            }
-            else if(i % 2 == 0 && i % 3 == 0 && i % 5 == 0){
-                System.out.println("Codility Test Coders");
-            }else{
+            } else {
                 System.out.println(i);
             }
         }
-    }
-
-    public static void main(String[] args) {
-        divisibleMethod(17);
     }
 }

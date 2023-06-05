@@ -1,9 +1,7 @@
-package Leela.week_2;
-
-import java.util.Scanner;
+package Aaron.week_2;
 
 /**
- *  Numbers -- Divisible by 3, 5, 15
+ * Numbers -- Divisible by 3, 5, 15
  * Write a program that can print the numbers between 1 ~ 100 that can be divisible by 3, 5, and 15.
  * if the number can be divisible by 3, 5 and 15, then it should only be displayed in DivisibelBy15 section
  * if the number can be divisible by 3 but cannot be divisible by 15, then it should only be displayed in DivisibelBy3 section
@@ -15,38 +13,28 @@ import java.util.Scanner;
  * Divisible By 3 3 6 9 12 18 21 24 27 33 36 39 42 48 51 54 57 63 66 69 72 78 81 84 87 93 96 99
  */
 public class NumbersDivisibleBy_3_5_15 {
-
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        solution(100);
+    }
 
-        int n = 100;
-
-        String divisibleBy3 = "";
-        String divisibleBy5 = "";
+    public static void solution(int n) {
         String divisibleBy15 = "";
+        String divisibleBy5 = "";
+        String divisibleBy3 = "";
+        int[] arr = new int[n];
+        for (int i = 0; i < arr.length; i++)
+            arr[i] = i + 1;
 
-
-        for (int i = 1; i <= n; i++) {
-
-            if (i % 15 == 0 && i % 3 == 0) {  // divisible by 3
-                divisibleBy15 += i + " ";
-            }
-
-            if (i % 5 == 0 && i % 15 != 0) { // divisible by 5
-                divisibleBy5 += i + " ";
-            }
-
-            if (i % 3 == 0 && i % 15 != 0) {  // divisible by 15
-                divisibleBy3 += i + " ";
-            }
-
+        for (int each : arr) {
+            if (each % 15 == 0 && each % 3 == 0)
+                divisibleBy15 += each + " ";
+            if (each % 5 == 0 && each % 15 != 0)
+                divisibleBy5 += each + " ";
+            if (each % 3 == 0 && each % 15 != 0)
+                divisibleBy3 += each + " ";
         }
-
-        System.out.println("Divisible By 3: " + divisibleBy3);
-        System.out.println("Divisible By 5: " + divisibleBy5);
         System.out.println("Divisible By 15: " + divisibleBy15);
-
-        input.close();  // scanner close
-
+        System.out.println("Divisible By 5: " + divisibleBy5);
+        System.out.println("Divisible By 3: " + divisibleBy3);
     }
 }

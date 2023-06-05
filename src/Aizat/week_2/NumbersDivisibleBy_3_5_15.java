@@ -1,4 +1,4 @@
-package week_2;
+package Aizat.week_2;
 
 /**
  *  Numbers -- Divisible by 3, 5, 15
@@ -13,4 +13,31 @@ package week_2;
  * Divisible By 3 3 6 9 12 18 21 24 27 33 36 39 42 48 51 54 57 63 66 69 72 78 81 84 87 93 96 99
  */
 public class NumbersDivisibleBy_3_5_15 {
+    public static void main(String[] args) {
+        System.out.println("Numbers divisible by 3: ");
+        for (int i = 1; i <= 100; i++) {
+            if (i % 3 == 0) {
+
+                System.out.print(i +",");
+            }
+        }
+        System.out.println();
+        System.out.println("Numbers divisible by 5");
+
+        for (int i = 1; i <= 100; i++) {
+            if (i % 5 == 0) {
+                System.out.print(i +",");
+
+            }
+
+        }
+        System.out.println();
+        System.out.println("Numbers divisible by 15 :");
+
+        for (int i = 1; i <= 100; i++) {
+            if (i % 15== 0) {
+                System.out.print(i+ ",");
+            }
+        }
+    }
 }

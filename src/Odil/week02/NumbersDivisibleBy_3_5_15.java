@@ -1,6 +1,4 @@
-package Leela.week_2;
-
-import java.util.Scanner;
+package Odil.week02;
 
 /**
  *  Numbers -- Divisible by 3, 5, 15
@@ -17,36 +15,32 @@ import java.util.Scanner;
 public class NumbersDivisibleBy_3_5_15 {
 
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
 
-        int n = 100;
+        divisableBy3_5_15();
 
-        String divisibleBy3 = "";
-        String divisibleBy5 = "";
-        String divisibleBy15 = "";
+    }
 
+    public static void divisableBy3_5_15(){
 
-        for (int i = 1; i <= n; i++) {
+        String result3 = "";
+        String result5 = "";
+        String result15 = "";
 
-            if (i % 15 == 0 && i % 3 == 0) {  // divisible by 3
-                divisibleBy15 += i + " ";
-            }
+        for (int i = 1; i < 101; i++) {
 
-            if (i % 5 == 0 && i % 15 != 0) { // divisible by 5
-                divisibleBy5 += i + " ";
-            }
-
-            if (i % 3 == 0 && i % 15 != 0) {  // divisible by 15
-                divisibleBy3 += i + " ";
+            if (i % 15 == 0){
+                result15 += i + " ";
+            } else if (i % 5 == 0) {
+                result5 += i + " ";
+            } else if (i % 3 == 0){
+                result3 += i + " ";
             }
 
         }
 
-        System.out.println("Divisible By 3: " + divisibleBy3);
-        System.out.println("Divisible By 5: " + divisibleBy5);
-        System.out.println("Divisible By 15: " + divisibleBy15);
-
-        input.close();  // scanner close
+        System.out.print("Divisable by 15: " + result15 + "\n");
+        System.out.print("Divisable by 5: " + result5 + "\n");
+        System.out.print("Divisable by 3: " + result3 + "\n");
 
     }
 }
