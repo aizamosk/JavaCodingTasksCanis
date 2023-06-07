@@ -1,4 +1,4 @@
-package Aizat;
+package Aizat.week_1;
 
 import java.util.Scanner;
 public class DivisionWithoutOperator {
