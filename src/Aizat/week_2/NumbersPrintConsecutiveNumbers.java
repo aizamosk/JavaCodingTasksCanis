@@ -48,7 +48,7 @@ public class NumbersPrintConsecutiveNumbers {
     }
 
     public static void main(String[] args) {
-        divisibleMethod(17);
+        divisibleMethod(25);
     }
 }
 
