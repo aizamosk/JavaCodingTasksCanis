@@ -1,4 +1,4 @@
-package maggie.week2;
+package maggie;
 
 public class DivisibleBy3And5 {
 
