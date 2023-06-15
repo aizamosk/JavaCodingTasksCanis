@@ -10,8 +10,7 @@ public class UniqueCharacters {
      */
     public static void main(String[] args) {
         System.out.println(Unique("AAABBBCCCDEF"));
-        System.out.println(unique("AAABBBCCCDEF"));
-    }
+        System.out.println(unique("AAABBBCCCDEF"));    }
     public static String Unique(String str) {
 
         String result ="";
