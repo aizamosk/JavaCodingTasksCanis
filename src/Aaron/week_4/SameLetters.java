@@ -3,6 +3,8 @@ package Aaron.week_4;
 import java.util.Arrays;
 import java.util.TreeSet;
 
+import static Aaron.week_4.RemoveDuplicates.removeDup;
+
 public class SameLetters {
     /*Write a return method that check if a string is build out of the same letters as another string.
     Ex:  same("abc",  "cab"); -> true
@@ -17,7 +19,9 @@ public class SameLetters {
             a1 +=each;
         for(char each: ch2)
             a2 +=each;
-        return  a1.equals(a2) ;
+        String a1removed= removeDup(a1);
+        String a2removed= removeDup(a2);
+        return  a1removed.equals(a2removed) ;
 
        // return Arrays.equals(ch1, ch2);
     }
