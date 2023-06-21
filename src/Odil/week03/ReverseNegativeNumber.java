@@ -7,6 +7,7 @@ public class ReverseNegativeNumber {
         ReverseNegativeNumber(-53);
         ReverseNegativeNumber(-35);
         ReverseNegativeNumber(-117);
+        ReverseNegativeNumber(254);
 
     }
 
@@ -27,6 +28,6 @@ input: -35  output: -53
         for (int i = intToString.length()-1 ; i > 0 ; i--){
         reverseString += intToString.charAt(i);
         }
-        System.out.println(Integer.parseInt(reverseString));
+        System.out.println(Integer.parseInt(reverseString)*-1);
     }
     }
