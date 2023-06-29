@@ -1,4 +1,4 @@
-package Odil;
+package Odil.week01;
 
 public class OddOrEven {
     /*
