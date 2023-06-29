@@ -1,8 +1,11 @@
 package Mehrubon.week5;
 
+import java.util.Arrays;
+import java.util.Collections;
+
 public class UniqueCharacters {
     public static void main(String[] args) {
-        System.out.println(uniqueChars("fjkjhgfdhhjhjgjgj"));
+        System.out.println(uniqueChars("fjkjhgfdhhjhjgjaectghjklgj"));
     }
        /*
     Write a return  method that can find the unique characters from the String
@@ -10,15 +13,27 @@ public class UniqueCharacters {
      */
 
     public static String uniqueChars(String str){
-        String result = "";
-        for (int i = str.length()-1; i >=0 ; i--) {
-            char each = str.charAt(i);
+        String result ="";
 
-            if(!result.contains(""+each)) {
-                result += each;
-            }
-        }
+        for(String each : str.split(""))
+            result +=(  (Collections.frequency(Arrays.asList(str.split("")), each)) ==1 ) ? each : "";
         return result;
     }
+    public static String unique(String str) {
 
+        String[] arr=str.split("");
+
+        String unique1="";
+
+        for(int j=0; j<arr.length; j++) {
+            int num=0;
+            for(int i=0; i<arr.length; i++ ) {
+                if(arr[i].equals(arr[j]) )
+                    num++;
+            }
+            if(num==1)
+                unique1+=arr[j];
+        }
+        return unique1;
+    }
 }
