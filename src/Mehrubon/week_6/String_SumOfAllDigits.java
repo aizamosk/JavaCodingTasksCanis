@@ -3,6 +3,7 @@ package Mehrubon.week_6;
 public class String_SumOfAllDigits {
     public static void main(String[] args) {
         System.out.println(sumOfDigits("dsg1234gjkj"));
+
     }
     /*
     Write a method that can return the sum of the digits in a string
