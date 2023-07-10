@@ -1,4 +1,4 @@
-package week_6;
+package Alexey.week_6;
 
 public class String_SumOfAllDigits {
     /*
