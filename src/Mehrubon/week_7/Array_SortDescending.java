@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Array_SortDescending {
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(descendingArr(new int[]{10,20,7, 8, 90})));
+        System.out.println(Arrays.toString(descendingArr(new int[]{10,20,7, 8, 90, -10})));
 
 }
     /*
