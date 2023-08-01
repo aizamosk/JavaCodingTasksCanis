@@ -1,4 +1,4 @@
-package Week_10;
+package week_10;
 
 public class Array_sortingInDescending {
     /*
