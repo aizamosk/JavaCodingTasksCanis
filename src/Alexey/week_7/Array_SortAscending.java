@@ -14,23 +14,18 @@ public class Array_SortAscending {
      */
 
     public static int[] sortAscending (int[] ar1) {
-        int curremtMinimumNumber = ar1[0];
-        int indexHolder = 0;
-        int tempNumber = 0;
+        boolean sortChecker = false;
         for (int i = 0; i < ar1.length; i++) {
-            curremtMinimumNumber = ar1[i];
-            for (int j = i; j < ar1.length; j++) {
-                if (ar1[j] < curremtMinimumNumber) {
-                    curremtMinimumNumber = ar1[j];
-                    indexHolder = j;
+            for (int j = i; j < ar1.length; j++) { // second loop finds minimum number and move it to the front
+                if (ar1[j] < ar1[i]) {
+                    int tempNumber = 0;
+                    tempNumber = ar1[i];
+                    ar1[i] = ar1[j];
+                    ar1[j] = tempNumber;
+                    sortChecker = true;           // number movement detected, array ahs to be sorted all the way
                 }
             }
-
-            if (ar1[i] != curremtMinimumNumber ) {
-                tempNumber = ar1[i];
-                ar1[i] = curremtMinimumNumber;
-                ar1[indexHolder] = tempNumber;
-            }
+            if (sortChecker == false) {break;} //array is already sorted, no numbers movement was detected at the first run
         }
         return ar1;
     }
@@ -46,7 +41,8 @@ public class Array_SortAscending {
             System.out.println("Please enter " + (i + 1) + " element of the array");
             userArray[i] = input.nextInt();
         }
-
+        //int [] userArray = {1,2,3,5,2,7,1,-5,10,65,4,0,1,2,3};
         System.out.println("Sorted array: " + Arrays.toString(sortAscending(userArray)));    // invoking method
     }
 }
+
