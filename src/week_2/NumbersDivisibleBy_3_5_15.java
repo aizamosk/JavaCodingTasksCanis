@@ -1,4 +1,4 @@
-package week2;
+package week_2;
 /**
  *  Numbers -- Divisible by 3, 5, 15
  * Write a program that can print the numbers between 1 ~ 100 that can be divisible by 3, 5, and 15.
